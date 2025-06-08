@@ -1,0 +1,158 @@
+Git Open Source version control system
+fast and scalable and popular
+
+1) tracks the history
+2) collaborate - no overwrite is done
+
+GitHub 
+Website allows developers to store and manage code using git
+
+uploaded as folder (Repository)
+
+add -> Commit ( 2 step process) but in git we directly commit it
+
+
+locale - computer
+remote - GitHub
+
+git clone 'URL'
+
+cd - change directory
+
+ls - list files
+
+ls -a -- all the hidden files
+
+.git - folder while u r using GitHub
+
+git status - agar local me change kiya hai toh aur GitHub pe nhi kiya toh show karta hai
+             warna up to date show karega
+
+untracked file - new files that git doesn't yet track
+modified - changed
+staged - file is ready to be committed ( add but not commit) 
+unmodified - unchanged
+
+
+add - adds new or changed files
+
+* git add<-file name ->
+* git add . - for all the files together
+
+commit - record
+
+* git commit -m "Some message"
+
+
+abhi local system is 1 git ahead of the GitHub 
+
+to show the changes on the website  we push 
+
+push - upload local content to remote repo
+
+* git push origin main
+
+main(branch)
+
+for Starting with the local machine
+
+* git init - initialize 
+
+* git remote add origin <-link->  ----- add to remote repo named origin
+
+* git remote -v  -- to verify origin
+
+* git branch  -- to check in which branch we are in (master branch )
+
+* git branch -M main -- rename 
+
+* git push origin main or 
+  git push -u origin main ---(-u set upstream , matlab hum sirf main me kaam lar rahe hai
+                                      so in future we can only write git push)
+
+
+# Workflow
+
+GitHub repo
+clone
+changes
+add
+commit
+push
+
+
+# git branches
+
+1 coder 1 branch pe kaam karta hai
+similarly 2, 3 jitney bhi hai wo sab log apne alag branch pe kaam karte hai
+taaake kisi ko kisi ke liye wait karna na pade
+
+and baad me jaake merge kar dete hai
+
+# Branch Commands
+
+* git branch
+* git branch -M main
+
+* git checkout <- Branch name ->  ( to navigate kaha jana bai)
+
+* git checkout -b <- new branch name ->  (  to navigate in new branch)
+
+* git branch -d <-branch name -> ( delete branches)
+
+
+# merging code
+
+1) * git diff <- kisse compare karna hai ->
+   * git merge <--->
+
+2) create pr - pull request  (it let you tell others about changes you've pushed to a                   branch in a repo on github
+
+--- PR reviewed by developers
+
+through GitHub 
+
+
+jab bhi remote se local me lana ho toh pull use karte hai
+
+* git pull origin main
+
+# Merge conflict 
+
+jab ek hi file me yaa same chiz change ki gayi ho toh conflict hota hai
+
+You can select changes accordingly 
+
+new changes, incoming changes or both changes
+
+
+# Undoing Changes
+
+git log se hash value nikalti hai
+
+Case 1 : staged changes (after add)
+
+* git reset <-file name -> 
+
+* git reset 
+
+
+Case 2 : committed changes (for one commit)
+
+* git reset HEAD~1   ------ this is the last commit which has happened
+
+Case 3 : committed changes (For many commits)
+
+* git reset <- commit hash ->
+
+* git reset --hard <- commit hash ->  ---- no undone modification is shown on vs code
+
+
+
+Fork 
+
+a fork is a new repository that share code and visibility settings with the original " Upstream" repository 
+
+fork is a rough copy
+
+fork karne ke baad merge kar sakte hai
