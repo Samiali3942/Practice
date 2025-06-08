@@ -1,5 +1,5 @@
 ## 🛠️ Practice
   
-Java, Python and DSA
+Java, Python, Dsa and many more
 
 This is done in feature 1 branch
