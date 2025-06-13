@@ -2,7 +2,7 @@
 import java.util.Scanner;
 public class loops2 {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
+    /*  Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
         int factorial = 1;
         for(int i = 1; i <= n; i++){
@@ -10,6 +10,18 @@ public class loops2 {
         }
         System.out.println(factorial);
         sc.close();
+    */
+
+    Scanner scanner = new Scanner(System.in);
+    int num = scanner.nextInt();
+    int factorial = 1;
+    do {
+        factorial *= num;
+        num--;
+    } while (num > 0);
+
+    System.out.println(factorial);
+    scanner.close();
     }
 }
 
