@@ -12,15 +12,15 @@ public class loops2 {
         sc.close();
     */
 
-    Scanner scanner = new Scanner(System.in);
-    int num = scanner.nextInt();
-    int factorial = 1;
+    Scanner scanner = new Scanner(System.in); //5
+    int num = scanner.nextInt(); //5
+    int factorial = 1; //1
     do {
-        factorial *= num;
-        num--;
-    } while (num > 0);
+        factorial *= num; //1*5=5
+        num--; //4
+    } while (num > 0); //4>0
 
-    System.out.println(factorial);
+    System.out.println(factorial); //120
     scanner.close();
     }
 }
