@@ -10,7 +10,7 @@ public class half_pyramid {
             for(int j=1;j<=i;j++){ //1<=1
                 System.out.print(j); //number
             }
-            System.out.println(); //
+            System.out.println(); 
         }
         sc.close();
     }
