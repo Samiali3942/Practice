@@ -10,7 +10,7 @@ public class star {
             for(int j=1;j<=i;j++){ //1<=1
                 System.out.print("*"); //*
             }
-            System.out.println(); //
+            System.out.println(); 
         }
         sc.close();
     }

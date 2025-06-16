@@ -10,7 +10,7 @@ public class char_pyramid {
                 System.out.print(ch); //A
                 ch++; //B
             }
-            System.out.println(); //
+            System.out.println();
         }
        
     }
