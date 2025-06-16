@@ -10,7 +10,7 @@ public class inverted_star {
             for(int j=1;j<=n-i+1;j++){ //1<=4-1+1=4
                 System.out.print("*"); //*
             }
-            System.out.println(); //
+            System.out.println(); 
         }
         sc.close();
     }
