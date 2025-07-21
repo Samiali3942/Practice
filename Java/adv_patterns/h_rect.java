@@ -29,8 +29,24 @@ public class h_rect {
         }
     }
 
+    public static void floyds_triangle(int n) {
+        int count=1;
+        // Loop through each row
+        for (int i = 1; i <= n; i++) {
+            // Loop through each column in the current row
+            for (int j = 1; j <= i; j++) {
+                // Print '*' for the border (first or last row, or first or last column)
+                System.out.print(count+" ");
+                count++;
+            }
+            // Move to the next line after each row
+            System.out.println();
+        }
+    }
+
     public static void main(String[] args) {
         // Print a hollow rectangle of 5 rows and 4 columns
         hollow(5, 4);
+        floyds_triangle(5);
     }
 }
